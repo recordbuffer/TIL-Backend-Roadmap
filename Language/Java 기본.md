@@ -421,5 +421,36 @@ public class polymorphism() {
 
 <br><br>
 
+## 빌드 Build 
+: 소스 코드를 실행 가능한 애플리케이션으로 변환해주는 것 <br>
+→ 다양한 라이브러리를 사용하며 버전 관리 등이 번거로워짐 = 빌드 도구 등장
+
+<b>Ant</b> <br>
+: 이클립스에 기본 탑재된 XML 스크립트 기반의 빌드 도구
+
+<b>Maven</b> <br>
+: XML 스크립트 기반으로 하며 Pom.xml 파일로 라이브러리와 의존성을 관리하는 빌드 도구
+- 상속 구조
+- 라이프 사이클 개념 도입으로 빌드 순서를 정의할 수 있음
+
+<b>Gradle</b> <br>
+: Groovy 문법을 기반으로 Build.gradle 스크립트에 작성하는 빌드 도구
+- 간결한 스크립트
+- 설정 주입 방식으로 정의 
+- 빌드 속도가 빠름
+  - 점진적 빌드 : 변경되지 않는 부분에 대해 빌드 실행 X
+  - 빌드 캐시
+  - 데몬 프로세스
+- 멀티 프로젝트 빌드
+→ 하나의 프로젝트 내 여러 하위 프로젝트 구성 가능
+
+- Gradle Dependencies 사용
+  - implementation : 컴파일과 런타임 모두에 사용
+  - compileOnly : 컴파일에만 사용
+  - runtimeOnly : 런타임에만 사용
+  - testImplementation : 테스트에만 사용
+
+
+<br><br>
 
 
